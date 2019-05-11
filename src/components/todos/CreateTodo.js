@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class CreateTodo extends Component {
   render() {
-    return(
+    return (
       <div>
-        Create Todo Component
+        <label>add todo</label>
+        <input type="text" onChange={event => this.handleChange(event)} />
       </div>
-    )
+    );
   }
 }
 
